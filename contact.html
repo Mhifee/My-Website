@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact Page</title>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <div class="top-1">
+                <h1>My Website</h1>
+            </div>
+            <div class="top-2">
+                <nav class="main-nav">
+                    <ul>
+                        <li><a href="homepage.html">About Me</a></li>
+                        <li><a href="contact.html" class="contact">Contact</a></li>
+                        <li><a href="register.html">Register</a></li>
+                        <li><a href="login.html">Log-in</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="container">
+            <div class="contact-1">
+                <h2>Contact
+                    <p>Use the form to contact me while sending your thoughts in the message box.</p>
+                    <p>For more information, check out my <a href="homepage.html" class="homepage">Homepage</a></p>
+                    <form>
+                        <label for = "name"> Name: </label>
+                        <input type = "text" id ="name" name = "name" placeholder = "enter your name" required>
+                        <label for = "email"> Email: </label>
+                        <input type = "email" id ="email" name = "email" placeholder = "enter a valid email" required>
+                        <label for= "message">Message:</label>
+                        <textarea name="message" id="message" cols="50" rows="10" placeholder="drop a message"></textarea>
+                        <input type = "submit" value ="Submit">
+                    </form>
+                </h2>
+            </div>
+            <div class="other-content">
+                <p>Click here to <a href="register.html">register</a> or <a href="login.html">login</a> if you already have an account.</p>    
+            </div>
+        </div>
+    </main>
+    <footer>
+        Copyright. All rights reserved
+    </footer> 
+</body>
+</html>

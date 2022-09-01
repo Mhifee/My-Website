@@ -1,0 +1,778 @@
+*{
+  margin: 0;
+  padding: 0;  
+  text-decoration: none;
+}
+body{
+  justify-content: center;
+  position: relative;
+  background-color: rgb(72, 71, 172);
+}
+header .top-1{
+  background-color: rgb(205, 199, 199);
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 1;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+header h1{
+  display: inline-block;
+  color: rgb(72, 71, 172);
+  border: 8px solid rgb(72, 71, 172);
+  padding: 5px 12px;
+  border-radius: 25px;
+}
+header .top-2{
+  padding: 10px; 
+  margin-top: 70px;
+  /* position: fixed; */
+}
+nav ul{
+  /* visibility: hidden; */ 
+  white-space: nowrap;
+  width: 50%;
+  text-align: left;
+}
+nav li{
+  display: block;
+  font-size: 20px;
+} 
+nav li a{
+  text-decoration: none;
+  color: rgb(205, 199, 199);
+}
+nav li a:hover{
+  border-right: 5px solid white;
+  border-left: 5px solid white;
+  padding: 2px;
+}
+nav li a.about{
+  color: white;
+}
+nav li a.contact{
+  color: white;
+}
+nav li a.register{
+  color: white;
+}
+nav li a.log{
+  color: white;
+}
+main{
+  margin: 0;
+  padding: 0;
+  color: rgb(205, 199, 199);
+  text-align: left;
+}
+p{
+  font-size: 18px;
+}
+#welcome .name{
+  background:rgb(205, 199, 199);
+  color:  rgb(72, 71, 172);
+  padding: 10px;
+  font-size: 10px;
+  position: relative; 
+  text-align: left;
+} 
+#welcome .name span{
+  font-size: 24px;
+}
+.img{
+  height: 150px;
+  width: 140px;
+  border-radius: 100px; 
+  display: flex;
+  margin: 10px;
+  z-index: 1;
+  border: 2px solid rgb(205, 199, 199);
+}
+.img:hover{
+  border: 4px solid rgb(205, 199, 199);
+}
+.content{
+  padding: 20px;
+  margin-bottom: 5px;
+}
+.content h2{
+  font-size: 25px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgb(205, 199, 199);
+  width: max-content;
+  padding: 5px;
+}
+.content p{
+  line-height: 2em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.content ul{
+  line-height: 2em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 15px;
+}
+.content li{
+  list-style-type: disc;
+}
+.button a{
+  color: rgb(72, 71, 172);
+  background-color: rgb(205, 199, 199);
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 0 10px 10px 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+}
+.button a:hover{
+  color: rgb(205, 199, 199);
+  background-color: rgb(72, 71, 172);  
+  border: 3px solid rgb(205, 199, 199);
+}
+.note{
+  font-size: 15px;
+  margin: 10px;
+}
+.note a{
+  color: white;
+}
+.note a:hover{
+  text-decoration: underline;
+}
+footer{
+  background: rgb(205, 199, 199);
+  color: rgb(72, 71, 172);
+  padding: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+/* Contact Page */
+
+#container{
+  margin: 10px;
+}
+#container h2{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+#container p{
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+#container .homepage{
+  color: rgb(72, 71, 172);
+  background-color: rgb(205, 199, 199);
+  border-radius: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 15px;
+} 
+#container .homepage:hover{
+  border: 3px solid rgb(205, 199, 199);
+}
+label{
+  font-size: 20px;
+}
+input[type=text]{
+  width: 100%;
+  font-size: large;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 71, 172);
+}
+input[type=email]{
+    width: 100%;
+    font-size: large;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(72, 71, 172);
+}
+input:focus{
+  border: 1px solid rgb(72, 71, 172);
+  outline: none;
+}
+textarea{
+  width: 100%;
+  font-size: large;
+  height: 150px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 71, 172);
+}
+textarea:focus{
+  border: 1px solid rgb(72, 71, 172);
+  outline: none;
+}
+input[type=submit]{
+  background-color: rgb(205, 199, 199);
+  color: rgb(72, 71, 172);
+  width: 20%;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  margin: 10px 10px 30px 10px;
+  border-radius: 20px;
+  border: 3px solid rgb(72, 71, 172); 
+  font-size: 20px;
+}
+input[type=submit]:hover{
+  color: rgb(72, 71, 172);
+  background-color: rgb(205, 199, 199);
+  border: 5px solid rgb(72, 71, 172);
+  cursor: pointer;
+}
+#container .other-content { 
+  font-size: 17px;
+  padding: 10px 0px;
+  margin: 0px;
+}
+#container .other-content a{
+  color: white;
+}
+#container .other-content a:hover{
+  text-decoration: underline;
+}
+/* #container .form-1{
+  overflow-y: hidden;
+  float: right;
+  height: 700px;
+  width: 500px;
+  padding: 20px;
+  border: 5px solid white;
+  border-radius: 30px;
+  color:  rgb(72, 71, 172);
+  justify-content: center;
+  background-color: rgb(205, 199, 199);
+  background-image: url(images/feedback.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+#container h2{
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+#container p{
+  line-height: 2em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#container .homepage{
+  color: rgb(205, 199, 199);
+  border: 2px solid rgb(205, 199, 199);
+  border-radius: 20px;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 20px;
+}
+#container .homepage:hover{
+  background-color: rgb(72, 71, 172);
+  border: 5px solid rgb(205, 199, 199);
+}
+label{
+  font-size: 20px;
+}
+input[type=text]{
+  width: 85%;
+  font-size: large;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 71, 172);
+}
+input[type=email]{
+    width: 84.5%;
+    font-size: large;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(72, 71, 172);
+}
+input:focus{
+  border: 1px solid rgb(72, 71, 172);
+  outline: none;
+}
+textarea{
+  width: 97%;
+  font-size: large;
+  height: 150px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 71, 172);
+}
+textarea:focus{
+  border: 1px solid rgb(72, 71, 172);
+  outline: none;
+}
+input[type=submit]{
+  background-color: rgb(205, 199, 199);
+  color: rgb(72, 71, 172);
+  width: 20%;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  margin: 10px 10px 30px 10px;
+  border-radius: 20px;
+  border: 3px solid rgb(72, 71, 172); 
+  font-size: 20px;
+}
+input[type=submit]:hover{
+  color: rgb(72, 71, 172);
+  background-color: rgb(205, 199, 199);
+  border: 5px solid rgb(72, 71, 172);
+  cursor: pointer;
+} 
+#container .other-content { 
+  font-size: 17px;
+  padding: 10px 0px;
+  margin: 0px;
+  margin-bottom: 53vh;
+}
+#container .other-content a{
+  color: white;
+}
+#container .other-content a:hover{
+  text-decoration: underline;
+}  */
+
+/* *
+header h1{
+  display: inline-block;
+  color: rgb(72, 71, 172);
+  border: 8px solid rgb(72, 71, 172);
+  padding: 5px 12px;
+  border-radius: 25px;
+}
+header .top-2{
+  padding: 20px;
+  position: sticky;
+  margin-top: 70px;
+}
+nav ul{
+  white-space: nowrap;
+  width: 100%;
+  margin: 0;
+  text-align: right;
+}
+nav li{
+  width: 50%;
+  display: inline-block;
+  font-size: 24px;
+}
+main{
+  max-width: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  color: rgb(205, 199, 199);
+  text-align: left;
+}
+#welcome .name{
+  background:rgb(205, 199, 199);
+  color:  rgb(72, 71, 172);
+  padding: 10px 0px 10px 30px;
+  font-size: 35px;
+  top: 0px;
+  position: relative;
+  margin-top: 10px; 
+  text-align: left;
+} 
+#welcome .name span{
+  font-size: 1.15em;
+}
+.img{
+  height: 300px;
+  width: 250px;
+  border-radius: 200px;
+  float: right; 
+  display: flex;
+  z-index: 1;
+  border: 5px solid rgb(205, 199, 199);
+}
+.img:hover{
+  margin-top: -10px;
+  border: 10px solid rgb(205, 199, 199);
+}
+.content{
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.content h2{
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+.content p{
+  line-height: 2em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.content ul{
+  line-height: 2em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.button a{
+  color: rgb(205, 199, 199);
+  border: 2px solid rgb(205, 199, 199);
+  border-radius: 50px;
+  padding: 10px 15px;
+  margin: 10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+}
+.button a:hover{
+  background-color: rgb(72, 71, 172);
+  border: 5px solid rgb(205, 199, 199);
+}
+.note{
+  font-size: 20px;
+  margin-top: -50px;
+  margin-left: 300px;
+  margin-bottom: 30px;
+}
+.note a{
+  color: white;
+}
+.note a:hover{
+  text-decoration: underline;
+}
+footer{
+  background: rgb(205, 199, 199);
+  color: rgb(72, 71, 172);
+  padding: 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+/* Contact Page */
+
+/* #container{
+  margin: 10px;
+  padding: 10px;
+}
+#container .form-1{
+  overflow-y: hidden;
+  float: right;
+  height: 700px;
+  width: 500px;
+  padding: 20px;
+  border: 5px solid white;
+  border-radius: 30px;
+  color:  rgb(72, 71, 172);
+  justify-content: center;
+  background-color: rgb(205, 199, 199);
+  background-image: url(images/feedback.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+#container h2{
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+#container p{
+  line-height: 2em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#container .homepage{
+  color: rgb(205, 199, 199);
+  border: 2px solid rgb(205, 199, 199);
+  border-radius: 20px;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 20px;
+}
+#container .homepage:hover{
+  background-color: rgb(72, 71, 172);
+  border: 5px solid rgb(205, 199, 199);
+}
+label{
+  font-size: 20px;
+}
+input[type=text]{
+  width: 85%;
+  font-size: large;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 71, 172);
+}
+input[type=email]{
+    width: 84.5%;
+    font-size: large;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(72, 71, 172);
+}
+input:focus{
+  border: 1px solid rgb(72, 71, 172);
+  outline: none;
+}
+textarea{
+  width: 97%;
+  font-size: large;
+  height: 150px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 71, 172);
+}
+textarea:focus{
+  border: 1px solid rgb(72, 71, 172);
+  outline: none;
+}
+input[type=submit]{
+  background-color: rgb(205, 199, 199);
+  color: rgb(72, 71, 172);
+  width: 20%;
+  cursor: pointer;
+  text-align: center;
+  padding: 5px;
+  margin: 10px 10px 30px 10px;
+  border-radius: 20px;
+  border: 3px solid rgb(72, 71, 172); 
+  font-size: 20px;
+}
+input[type=submit]:hover{
+  color: rgb(72, 71, 172);
+  background-color: rgb(205, 199, 199);
+  border: 5px solid rgb(72, 71, 172);
+  cursor: pointer;
+} 
+#container .other-content { 
+  font-size: 17px;
+  padding: 10px 0px;
+  margin: 0px;
+  margin-bottom: 53vh;
+}
+#container .other-content a{
+  color: white;
+}
+#container .other-content a:hover{
+  text-decoration: underline;
+} */
+
+/* Registration Page */
+
+/* #container{
+  margin: 10px;
+  padding: 10px;
+}
+#container .register{
+  margin-bottom: 55vh;
+}
+#container .form-2{
+  overflow-y: hidden;
+  float: right;
+  height: 700px;
+  width: 500px;
+  padding: 30px 20px 0px 20px;
+  border: 5px solid white;
+  border-radius: 30px;
+  color:  rgb(72, 71, 172);
+  justify-content: center;
+  background-color: rgb(205, 199, 199);
+}
+#container h2{
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+#container p{
+  line-height: 2em;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#container p a{
+  color: white;
+}
+#container p a:hover{
+  text-decoration: underline;
+}
+#container .homepage{
+  color: rgb(205, 199, 199);
+  border: 2px solid rgb(205, 199, 199);
+  border-radius: 20px;
+  padding: 10px 15px;
+  text-align: center;
+  font-size: 20px;
+}
+#container .homepage:hover{
+  background-color: rgb(72, 71, 172);
+  border: 5px solid rgb(205, 199, 199);
+}
+input[id=firstname]{
+  width: 76%;
+  font-size: large;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 71, 172);
+}
+input[id=lastname]{
+  width: 76%;
+  font-size: large;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 71, 172);
+}
+input[id=number]{
+  width: 50%;
+  font-size: large;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 71, 172);
+}
+select{
+  width: 20%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: large;
+  color:rgb(27, 27, 182);
+  border: 1px solid rgb(27, 27, 182);
+  outline: none;
+}
+input[id=email]{
+  width: 70%;
+  font-size: large;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 71, 172);
+}
+input:focus{
+  border: 1px solid rgb(72, 71, 172);
+  outline: none;
+}
+input[id=password]{
+  width: 60%;
+  font-size: large;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 71, 172);
+}
+#container .note{ 
+  text-align: center;
+  margin: 20px;
+  font-size: 17px;
+  padding: 10px 0px;
+}
+#container .note a{
+  color: darkblue;
+}
+#container .note a:hover{
+  text-decoration: underline;
+}
+ */
+/* Log-in Page */
+/* 
+#container .login{
+  margin-bottom: 55vh;
+}
+#container .form-3{
+  overflow-y: hidden;
+  float: right;
+  height: 400px;
+  width: 500px;
+  padding: 30px;
+  border: 5px solid white;
+  border-radius: 30px;
+  color:  rgb(72, 71, 172);
+  justify-content: center;
+  background-color: rgb(205, 199, 199);
+}
+input[name=email]{
+  width: 81%;
+  font-size: large;
+  padding: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 71, 172);
+}
+input[name=password]{
+  width: 75%;
+  font-size: large;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(72, 71, 172);
+}
+input:focus{
+border: 1px solid rgb(72, 71, 172);
+outline: none;
+}
+#container .note-1{ 
+  text-align: center;
+  margin: 20px;
+  font-size: 17px;
+  padding: 10px 0px;
+}
+#container .note-1 a{
+  color: darkblue;
+}
+#container .note-1 a:hover{
+  text-decoration: underline;
+} */
+
+
+/* @media screen and (max-width: 430px) {
+header .top-1{
+  display: flex;
+  padding: 20px;
+  position: sticky;
+  margin-top: 70px ;
+}
+nav ul{
+  white-space: nowrap;
+  width: 100%;
+  display: inline;
+  margin: 0 auto;
+}
+nav li{
+  width: 50%;
+  font-size: 24px;
+}
+#welcome .name{
+  font-size: 15px;
+  top: 0px;
+  padding: 10px;
+  position: relative;
+  margin-top: 10px; 
+  text-align: left;
+} 
+#welcome .name span{
+  font-size: 1.1em;
+}
+
+} 
+@media screen and (min-width: 430px) {
+  #welcome .name{
+  font-size: 25px;
+  top: 0px;
+  position: relative;
+  margin-top: 10px; 
+  text-align: left;
+} 
+#welcome .name span{
+  font-size: 1.3em;
+} 
+
+}
+ */  */
